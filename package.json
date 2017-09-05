@@ -1,7 +1,7 @@
 {
   "name": "intoyuniot-ide",
   "main": "./lib/main",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Official IntoYunIoT IDE for Atom: The next generation integrated development environment for IoT. Cross-platform build system and unified debugger. Remote unit testing and firmware updates.",
   "keywords": [
     "IntoYunIoT",
@@ -25,10 +25,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/huangguozhen/intoyuniot-atom-ide.git"
+    "url": "https://github.com/IntoYun/intoyuniot-atom-ide.git"
   },
   "bugs": {
-    "url": "https://github.com/huangguozhen/intoyuniot-atom-ide/issues"
+    "url": "https://github.com/IntoYun/intoyuniot-atom-ide/issues"
   },
   "license": "Apache-2.0",
   "engines": {
