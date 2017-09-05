@@ -1,0 +1,84 @@
+menu: [
+  {
+    label: 'IntoYunIoT'
+    submenu: [
+      {
+        label: '新建或更新工程'
+        command: 'platformio-ide:initialize-new-project'
+      }
+      {
+        label: '打开工程目录'
+        command: 'application:add-project-folder'
+      }
+      { type: 'separator' }
+      {
+        label: '编译'
+        command: 'platformio-ide:target:build'
+      }
+      {
+        label: '烧录'
+        command: 'platformio-ide:target:upload'
+      }
+      {
+        label: '清除'
+        command: 'platformio-ide:target:clean'
+      }
+      { type: 'separator' }
+      {
+        label: '终端'
+        submenu: [
+          {
+            label: '打开/关闭'
+            command: 'platformio-ide-terminal:toggle'
+          }
+          {
+            label: '新建'
+            command: 'platformio-ide-terminal:new'
+          }
+          {
+            label: '上一个'
+            command: 'platformio-ide-terminal:prev'
+          }
+          {
+            label: '下一个'
+            command: 'platformio-ide-terminal:next'
+          }
+          {
+            label: '关闭'
+            command: 'platformio-ide-terminal:close'
+          }
+          {
+            label: '关闭所有'
+            command: 'platformio-ide-terminal:close-all'
+          }
+        ]
+      }
+      {
+        label: '串口监控'
+        command: 'platformio-ide:maintenance.serial-monitor'
+      }
+      {
+        label: '串口列表'
+        command: 'platformio-ide:maintenance.serial-ports'
+      }
+      { type: 'separator' }
+      {
+        label: '更新平台，插件和库'
+        command: 'platformio-ide:maintenance.update-platformio'
+      }
+      {
+        label: '升级IntoYunIoT Core'
+        command: 'platformio-ide:maintenance.upgrade-platformio'
+      }
+      {
+        label: '更新Atom插件'
+        command: 'settings-view:check-for-package-updates'
+      }
+      { type: 'separator' }
+      {
+        label: '关于'
+        command: 'platformio-ide:help-about'
+      }
+    ]
+  }
+]

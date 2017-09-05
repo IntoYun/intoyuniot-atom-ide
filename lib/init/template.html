@@ -1,0 +1,54 @@
+<div class="pio pio-template-root pio-modal pio-init">
+  <h1>初始化或更新IntoYunIoT工程</h1>
+
+  <p>
+    本向导可以帮您给指定的开发板构建新的构建环境(<code>[env:...]</code>)。 也就是您可以实现跨平台构建，一份代码，多个嵌入式平台/开发板。<br>
+    所有改变都将写入工程根目录下的配置文件intoyuniot.ini。<br>
+    如果您不使用向导，也可以直接修改配置文件intoyuniot.ini。
+  </p>
+
+  <p><span class="icon icon-alert"> <b>首次初始化工程需要联网， 它将从网络安装toolchains, frameworks, SDKs。 请耐心等待工程初始化完成。</b></p>
+
+  <section>
+    <div class="boards-select-wrapper">
+      <p class="boards-loading-placeholder">载入...</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="directory-select-wrapper">
+      <h2>选择目录:</h2>
+      <div class="settings-view">
+        <select class="directory-select dir-select-part form-control"></select>
+        <button class="other-directory btn btn-default">浏览</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="command-status"><span class="icon icon-gear spin"></span> <span class="content"></span></div>
+    <div class="controls">
+      <button class="do-init btn btn-lg btn-primary" disabled="disabled">确定</button>
+      <button class="cancel btn btn-lg btn-link">取消</button>
+    </div>
+  </section>
+
+  <hr width="80%" style="display: none;">
+  <small style="display: none;">
+    <p>
+      <a href="http://docs.platformio.org/page/projectconf.html">PlatformIO Project Configuration File "platformio.ini"</a> allows to set:
+      <ul>
+        <li><a href="http://docs.platformio.org/page/projectconf.html#build-options">Build options</a>: build flags, source filter, extra scripting</li>
+        <li><a href="http://docs.platformio.org/page/projectconf.html#upload-options">Upload options</a>: custom upload port, speed and extra flags</li>
+        <li><a href="http://docs.platformio.org/page/projectconf.html#library-options">Library options</a>: dependencies, extra library storages</li>
+      </ul>
+      Please visit documentation for the other options and examples
+      <a href="http://docs.platformio.org/page/projectconf.html">http://docs.platformio.org/page/projectconf.html</a>
+    </p>
+
+    <p>
+      The only first selected board (build environment <code>[env:...]</code>) will be used to generate data for Intelligent Code Completion
+      and Smart Code Linter.
+    </p>
+  </small>
+</div>
