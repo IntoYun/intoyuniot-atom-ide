@@ -1,7 +1,7 @@
 {
   "name": "intoyuniot-ide",
   "main": "./lib/main",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "description": "Official IntoYunIoT IDE for Atom: The next generation integrated development environment for IoT. Cross-platform build system and unified debugger. Remote unit testing and firmware updates.",
   "keywords": [
     "IntoYunIoT",
