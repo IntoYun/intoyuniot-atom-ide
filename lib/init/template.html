@@ -1,13 +1,13 @@
-<div class="pio pio-template-root pio-modal pio-init">
-  <h1>初始化或更新IntoYunIoT工程</h1>
+<div class="pio pio-template-root pio-modal pio-init" style="padding: 10px 15px;">
+  <h1>新建工程</h1>
 
-  <p>
+  <p style="display: none;">
     本向导可以帮您给指定的开发板构建新的构建环境(<code>[env:...]</code>)。 也就是您可以实现跨平台构建，一份代码，多个嵌入式平台/开发板。<br>
     所有改变都将写入工程根目录下的配置文件intoyuniot.ini。<br>
     如果您不使用向导，也可以直接修改配置文件intoyuniot.ini。
   </p>
 
-  <p><span class="icon icon-alert"> <b>首次初始化工程需要联网， 它将从网络安装toolchains, frameworks, SDKs。 请耐心等待工程初始化完成。</b></p>
+  <p style="display: none;"><span class="icon icon-alert"> <b>首次初始化工程需要联网， 它将从网络安装toolchains, frameworks, SDKs。 请耐心等待工程初始化完成。</b></p>
 
   <section>
     <div class="boards-select-wrapper">
@@ -18,13 +18,13 @@
   <section>
     <div class="serial-select-wrapper">
       <h2>下载方式:</h2>
-      <div class="settings-view" style="margin-bottom: 10px;">
+      <div class="settings-view protocol-view" style="margin-bottom: 10px; display: none;">
         <div style="width: 120px;">
           <input type="radio" id="dfu" name="uploadProtocol" checked value="" style="float: left;">
           <label for="dfu" style="padding-left: 10px; margin-top: 2px;">DFU模式</label>
         </div>
         <div style="width: 120px;">
-          <input type="radio" id="stlink" name="uploadProtocol" disabled value="stlink" style="float: left;">
+          <input type="radio" id="stlink" name="uploadProtocol" value="stlink" style="float: left;">
           <label for="stlink" style="padding-left: 10px; margin-top: 2px;">STLINK模式</label>
         </div>
       </div>
