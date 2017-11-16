@@ -16,6 +16,25 @@
   </section>
 
   <section>
+    <div class="serial-select-wrapper">
+      <h2>下载方式:</h2>
+      <div class="settings-view" style="margin-bottom: 10px;">
+        <div style="width: 120px;">
+          <input type="radio" id="dfu" name="uploadProtocol" checked value="" style="float: left;">
+          <label for="dfu" style="padding-left: 10px; margin-top: 2px;">DFU模式</label>
+        </div>
+        <div style="width: 120px;">
+          <input type="radio" id="stlink" name="uploadProtocol" disabled value="stlink" style="float: left;">
+          <label for="stlink" style="padding-left: 10px; margin-top: 2px;">STLINK模式</label>
+        </div>
+      </div>
+      <div class="setting-view">
+        <select class="serial-select port-select-part form-control"></select>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <div class="directory-select-wrapper">
       <h2>选择目录:</h2>
       <div class="settings-view">
