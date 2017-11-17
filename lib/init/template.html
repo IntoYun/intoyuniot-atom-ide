@@ -1,5 +1,5 @@
 <div class="pio pio-template-root pio-modal pio-init" style="padding: 10px 15px;">
-  <h1>新建工程</h1>
+  <h1 class='title'>新建工程</h1>
 
   <p style="display: none;">
     本向导可以帮您给指定的开发板构建新的构建环境(<code>[env:...]</code>)。 也就是您可以实现跨平台构建，一份代码，多个嵌入式平台/开发板。<br>
@@ -18,14 +18,18 @@
   <section>
     <div class="serial-select-wrapper">
       <h2>下载方式:</h2>
-      <div class="settings-view protocol-view" style="margin-bottom: 10px; display: none;">
-        <div style="width: 120px;">
-          <input type="radio" id="dfu" name="uploadProtocol" checked value="" style="float: left;">
-          <label for="dfu" style="padding-left: 10px; margin-top: 2px;">DFU模式</label>
+      <div class="settings-view protocol-view" style="margin-bottom: 10px;">
+        <div style="width: 120px; display: none;" class="dfuWrapper">
+          <input type="radio" id="dfu" name="uploadProtocol" value="dfu" style="float: left;">
+          <label for="dfu" style="padding-left: 10px; margin-top: 2px;">DFU下载</label>
         </div>
-        <div style="width: 120px;">
+        <div style="width: 120px; display: none;" class="stlinkWrapper">
           <input type="radio" id="stlink" name="uploadProtocol" value="stlink" style="float: left;">
-          <label for="stlink" style="padding-left: 10px; margin-top: 2px;">STLINK模式</label>
+          <label for="stlink" style="padding-left: 10px; margin-top: 2px;">STLINK下载</label>
+        </div>
+        <div style="width: 120px;" class="serialWrapper">
+          <input type="radio" id="serial" name="uploadProtocol" value="" checked disabled style="float: left;">
+          <label for="serial" style="padding-left: 10px; margin-top: 2px;">串口下载</label>
         </div>
       </div>
       <div class="setting-view">
